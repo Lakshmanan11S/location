@@ -16,8 +16,8 @@ app.get('/',async(req,res)=>{
             }}
 
         )
-        console.log('responsedat:',result.data.countryName)
-        const totalresult = result.data.countryName;
+        console.log('responsedat:',result.data)
+        const totalresult = result.data;
         console.log(totalresult)
         res.json({totalresult})
     }catch(error){
